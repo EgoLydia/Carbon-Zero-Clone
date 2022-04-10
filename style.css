@@ -658,11 +658,11 @@ footer p {
   .interest-rate-copy {
     margin: 0;
     width: 80%;
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .interest-rate-header {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 50px;
     width: 60%;
   }
@@ -696,10 +696,11 @@ footer p {
   .favorite-item-text {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-right: 40px;
   }
 
   .favorite-item {
-    padding: 50px;
+    padding: 10px;
     margin-left: 50px;
   }
 

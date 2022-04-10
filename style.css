@@ -1,21 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f8e1fe;
 }
 
 nav {
-  position: sticky;
-  top: 0;
   left: 0;
-  padding-top: 0;
-}
-
-.nav-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 85%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-links {
+  margin-right: 20px;
 }
 
 li {
@@ -28,9 +26,11 @@ li a {
   padding: 10px;
   font-size: 14px;
 }
+
 .logo {
   width: 55px;
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .merchants {
@@ -54,6 +54,12 @@ li a {
 
 section {
   padding-top: 20px;
+}
+
+.hero-section {
+  background-color: #f8e1ff;
+  padding-bottom: 50px;
+  padding-top: 100px;
 }
 
 .home-header {
@@ -96,9 +102,9 @@ p {
   background-color: #f2eefb;
   color: #5d2fce;
 }
+
 .header-img {
   width: 100%;
-  padding-top: 100px;
 }
 
 .hero-section2 {
@@ -139,18 +145,22 @@ p {
 
 main {
   background-color: #ffffff;
-  padding: 10px 10px;
-  text-align: center;
 }
 
 span {
   color: #5d2fce;
 }
 
+.own,
+span {
+  padding-left: 20px;
+}
+
 .favorite-item {
   background-color: #eff5fd;
   padding-top: 20px;
   padding-bottom: 50px;
+  margin-left: 0px;
 }
 
 .number {
@@ -175,6 +185,7 @@ span {
   margin-top: 30px;
   font-weight: 100;
 }
+
 .download {
   font-size: 13px;
   margin-top: 10px;
@@ -198,7 +209,7 @@ span {
   margin: 0;
   padding: 10px 10px;
   width: 20%;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .trending-stores {
@@ -297,6 +308,10 @@ span {
   text-align: center;
 }
 
+.partners {
+  background-color: #f8e1ff;
+}
+
 .partner-img {
   max-width: 80%;
   padding-left: 50px;
@@ -328,11 +343,13 @@ span {
 .how-to {
   background-color: #eff5fd;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
-.how-to-header {
+.how-to-header,
+.refer-merchant-header {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: #0f0821;
 }
@@ -356,7 +373,8 @@ span {
   width: 30px;
 }
 
-.how-to-btn, .build-btn {
+.how-to-btn,
+.build-btn {
   text-align: center;
   background-color: #5d2fce;
   color: #ffffff;
@@ -369,23 +387,173 @@ span {
 .build-img {
   max-width: 70%;
 }
+
 .build-img-holder {
   text-align: center;
+  margin-top: 50px;
 }
 
 .build {
   background-color: #ffffff;
 }
 
+.build-financial {
+  background-color: #f7f6f5;
+  padding-bottom: 80px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .build-header {
   font-size: 20px;
 }
+
 .build-paragraph {
   font-size: 14px;
 }
 
-.build-copy{
-padding-top: 80px;
+.build-copy {
+  padding-top: 80px;
+}
+
+.carbon-love {
+  color: #172b4d;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+}
+
+.img-testimonial-holder {
+  padding: 40px;
+  padding-top: 0px;
+}
+
+.img-testimonial {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.other-logo {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.other-logo-name {
+  margin: 0 auto;
+  width: 25%;
+}
+
+.refer-btn {
+  text-align: center;
+  background-color: #5d2fce;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px 10px;
+  width: fit-content;
+  margin-left: 132px;
+  border: 0px;
+}
+
+.refer {
+  background: linear-gradient(to right, #eef6ff, #f9cbf0);
+  padding-bottom: 100px;
+}
+
+.refer-merchant-header {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #172b4d;
+}
+
+.get-item-btn {
+  margin-top: 30px;
+  padding: 16px 30px;
+  text-align: center;
+  background-color: #5d2fce;
+  color: #ffffff;
+  border-radius: 8px;
+  border: 0px;
+}
+
+.faq-section-btn {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.quests-holder {
+  overflow: hidden;
+  height: auto;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.3);
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.faq-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.quests {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  background-color: #f7f6fd;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin-left: 5px;
+}
+
+.quest-holder:focus .answers {
+  display: block;
+}
+
+.answers {
+  font-size: 14px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  margin-top: 0px;
+  background-color: #f7f6fd;
+  font-weight: 500;
+  margin-left: 25px;
+  margin-right: 20px;
+  display: none;
+}
+
+footer {
+  background-color: #f3f4f5;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+footer p {
+  color: #bab4c7;
+  margin: 20px;
+  font-size: 12px;
+}
+
+.footer-logo {
+  max-width: 100%;
+}
+
+.icons {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 800px) {
@@ -407,11 +575,15 @@ padding-top: 80px;
 
   .logo {
     margin-top: 20px;
+    margin-left: 120px;
+  }
+
+  .nav-links {
+    margin-right: 100px;
   }
 
   section {
     margin: 0 auto;
-    width: 85%;
   }
 
   .home-header {
@@ -459,7 +631,7 @@ padding-top: 80px;
     background-size: cover;
     background-color: #f2f2f2;
     min-height: 100vh;
-    padding: 100px 100px 100px;
+    width: 85%;
   }
 
   .sub-copy {
@@ -476,8 +648,7 @@ padding-top: 80px;
     display: flex;
     padding-top: 100px;
     background-color: #ffffff;
-    padding-left: 120px;
-    padding-right: 120px;
+    width: 85%;
     padding-bottom: 0px;
     text-align: left;
   }
@@ -485,10 +656,11 @@ padding-top: 80px;
   .interest-rate-copy {
     margin: 0;
     width: 80%;
+    font-size: 28px;
   }
 
   .interest-rate-header {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 50px;
     width: 60%;
   }
@@ -509,10 +681,9 @@ padding-top: 80px;
 
   main {
     background-color: #ffffff;
-    padding-left: 120px;
-    padding-right: 120px;
-    text-align: left;
     width: 85%;
+    text-align: left;
+    padding: 100px;
   }
 
   .line {
@@ -526,13 +697,14 @@ padding-top: 80px;
   }
 
   .favorite-item {
-    padding-bottom: 70px;
+    padding: 50px;
+    margin-left: 50px;
   }
 
   .own,
   span {
     font-size: 50px;
-    padding-left: 30px;
+    margin-left: 0px;
   }
 
   .share {
@@ -561,6 +733,7 @@ padding-top: 80px;
     width: fit-content;
     margin: 0 auto;
   }
+
   .trending-stores {
     background-color: #ffffff;
     padding: 30px 120px;
@@ -601,6 +774,7 @@ padding-top: 80px;
     text-align: center;
     margin-bottom: 90px;
   }
+
   .customer-love-content {
     padding-top: 0px;
   }
@@ -609,9 +783,11 @@ padding-top: 80px;
     margin: 0px;
     font-size: 40px;
   }
+
   .product-page {
     padding-bottom: 0px;
   }
+
   .product-inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -624,8 +800,7 @@ padding-top: 80px;
   .partners {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px;
   }
 
   .partner-img {
@@ -641,12 +816,14 @@ padding-top: 80px;
     margin-left: 10px;
   }
 
-  .partner-header, .build-header{
+  .partner-header,
+  .build-header {
     font-size: 40px;
     text-align: left;
   }
 
-  .partner-paragraph, .build-paragraph {
+  .partner-paragraph,
+  .build-paragraph {
     font-size: 20px;
     text-align: left;
     padding: 0;
@@ -658,7 +835,8 @@ padding-top: 80px;
     margin-left: 20px;
   }
 
-  .how-to, .build {
+  .how-to,
+  .build {
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -673,32 +851,149 @@ padding-top: 80px;
     width: 50px;
   }
 
-  .how-to-btn{
+  .how-to-btn {
     width: fit-content;
     padding: 16px 32px;
   }
 
-  .build-financial{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: #f7f6f5;
-  margin-top: 60px;
-padding: 100px;}
+  .build-financial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f7f6f5;
+    margin-top: 60px;
+    padding: 100px;
+  }
 
-.build-btn{
-width: fit-content;
-padding: 16px 32px;
-margin-left: 15px;
+  .build-btn {
+    width: fit-content;
+    padding: 16px 32px;
+    margin-left: 15px;
+  }
+
+  .build-img-holder {
+    margin-top: 50px;
+  }
+
+  .build-img {
+    width: 100%;
+  }
+
+  .carbon-love {
+    color: #172b4d;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .testimonial-card {
+    background-color: #ffffff;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .img-testimonial-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .img-testimonial {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+  }
+
+  .other-logo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .other-logo-name {
+    width: 20%;
+  }
+
+  .refer-merchant-header {
+    font-size: bold;
+    font-size: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+  }
+
+  .refer-btn-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .refer-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .refer {
+    padding-top: 100px;
+  }
+
+  .quests {
+    font-size: 28px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .faq-section h2 {
+    font-size: 40px;
+  }
+
+  .get-item-btn {
+    padding: 32px 52px;
+  }
+
+  .faq-section {
+    padding: 100px;
+  }
+
+  .answers {
+    justify-content: space-between;
+    font-size: 24px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px 20px;
+    margin-top: 0px;
+    background-color: #f7f6fd;
+    font-weight: 500;
+  }
+
+  footer p {
+    color: #bab4c7;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 50%;
+  }
+
+  .footer-link {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons img {
+    margin: 30px;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
 }
-
-.build-img-holder{
-margin-top: 50px;
-}
-
-.build-img{
-width: 100%;
-}
-
-
-}
-

@@ -479,18 +479,8 @@ span {
   color: #172b4d;
 }
 
-.get-item-btn {
-  margin-top: 30px;
-  padding: 16px 30px;
-  text-align: center;
-  background-color: #5d2fce;
-  color: #ffffff;
-  border-radius: 8px;
-  border: 0px;
-}
-
 .faq-section-btn {
-  padding-bottom: 30px;
+  margin-top: 30px;
   text-align: center;
 }
 

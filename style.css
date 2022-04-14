@@ -1,6 +1,7 @@
-body {
+html,body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -570,7 +571,7 @@ footer p {
   justify-content: space-evenly;
 }
 
-@media (min-width:768px) {
+@media (min-width:768px){
   nav{
     margin-top: 20px;
   }
@@ -682,8 +683,7 @@ footer p {
 
 }
 
-@media (min-width: 992px){ 
-
+  @media (min-width:992px)and (min-width:1200px) {
   nav{
     margin-top: 20px;
   }
@@ -761,16 +761,19 @@ footer p {
 
   .hero-section {
     background-image: url(https://zero.getcarbon.co/images/Hero-bg-zero2x.png);
-    background-position: 50% 50%;
+    background-position: 50% 100%;
     background-size: cover;
     background-color: #f2f2f2;
     height: 100vh;
-    width: 85%;
   }
 
   .sub-copy {
     font-size: 35px;
     font-weight: bold;
+  }
+
+  .homepage-text{
+    margin-left: 100px;
   }
 
   .sub-paragraph-copy {
@@ -815,7 +818,6 @@ height: auto;  }
 
   main {
     background-color: #ffffff;
-    width: 80%;
     text-align: left;
     padding: 100px;
     margin: 0 auto;
@@ -831,11 +833,16 @@ height: auto;  }
     grid-template-columns: repeat(4, 1fr);
   }
   
-  .favorite-item {
+  .favorite-item{
+    padding-left: 30px;
+    padding-right: 10px;
+    /* width: 80%; */
+    margin: 0 auto;
   }
-
   .own{
     font-size: 60px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .share {
@@ -871,6 +878,13 @@ height: auto;  }
     padding: 30px 120px;
   }
 
+  .step1,
+.step2 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
   .trend {
     font-size: 35px;
   }
@@ -883,7 +897,7 @@ height: auto;  }
   }
 
   .konga-img {
-    height: 889px;
+    height: 900px;
     width: 100%;
   }
 
